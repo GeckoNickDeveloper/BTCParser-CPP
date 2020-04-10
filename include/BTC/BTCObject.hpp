@@ -1,11 +1,11 @@
 #ifndef BTCOBJECT_HPP
 #define BTCOBJECT_HPP
 
-#include "IBTCData.hpp"
-#include "BTCString.hpp"
-#include "BTCNumber.hpp"
-#include "BTCBool.hpp"
-#include "BTCList.hpp"
+#include <BTC/IBTCData.hpp>
+#include <BTC/BTCString.hpp>
+#include <BTC/BTCNumber.hpp>
+#include <BTC/BTCBool.hpp>
+#include <BTC/BTCList.hpp>
 
 #include <string>
 #include <map>
@@ -22,7 +22,7 @@ namespace BTC
 		BTCObject(void);
 		~BTCObject();
 
-		static isTag(std::string tag);
+		static bool isTag(std::string tag);
 
 		bool add(std::string tag, BTCString value);
 		bool add(std::string tag, BTCNumber value);
@@ -32,7 +32,7 @@ namespace BTC
 		void remove(std::string tag);
 
 		int count(void);
-		IBTCData tag(std::string tag);
+		IBTCData* tag(std::string tag);
 		std::list<std::string> tags(void);
 
 		std::string encode(void) override;

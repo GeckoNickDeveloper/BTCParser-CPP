@@ -1,7 +1,7 @@
 #ifndef BTCBOOL_HPP
 #define BTCBOOL_HPP
 
-#include "IBTCData.hpp"
+#include <BTC/IBTCData.hpp>
 #include <string>
 
 namespace BTC

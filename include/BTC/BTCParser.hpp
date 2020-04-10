@@ -1,0 +1,6 @@
+#ifndef BTCPARSER_HPP
+#define BTCPARSER_HPP
+
+
+
+#endif //! BTCPARSER_HPP

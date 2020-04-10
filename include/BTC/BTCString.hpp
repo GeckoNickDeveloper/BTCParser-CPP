@@ -1,7 +1,7 @@
 #ifndef BTCSTRING_HPP
 #define BTCSTRING_HPP
 
-#include "IBTCData.hpp"
+#include <BTC/IBTCData.hpp>
 #include <string>
 
 namespace BTC
