@@ -13,7 +13,7 @@ namespace BTC
 
 	protected:
 	public:
-		BTCBool(std::string value);
+		BTCBool(bool value);
 		~BTCBool();
 		
 		bool getValue(void);
