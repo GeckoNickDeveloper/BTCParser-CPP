@@ -14,3 +14,8 @@ std::string BTC::BTCBool::encode()
 {
 	return ((this->value) ? "true" : "false");
 }
+
+std::string BTC::BTCBool::encode(int separators)
+{
+	return this->encode();
+};
